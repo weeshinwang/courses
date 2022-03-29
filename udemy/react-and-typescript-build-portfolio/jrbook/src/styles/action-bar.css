@@ -1,0 +1,20 @@
+.button.is-small:not(.is-rounded) {
+  border-radius: 0px;
+}
+
+.button.is-small:not(.is-rounded):focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.action-bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+
+.action-bar:hover {
+  opacity: 1;
+}
