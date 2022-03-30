@@ -1,0 +1,13 @@
+.content {
+  /* width: 100%; */
+  border: 50px solid red;
+  padding: 50px;
+  margin-top: 10em;
+  background-color: white;
+  box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
+}
+
+.wrapper {
+  border: 5px solid limegreen;
+  width: 350px;
+}
