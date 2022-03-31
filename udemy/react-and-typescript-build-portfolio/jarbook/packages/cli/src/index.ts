@@ -1,3 +1,6 @@
-import run from 'local-api';
+import { program } from 'commander';
+import { openCommand } from './commands/open';
 
-run();
+program.addCommand(openCommand);
+
+program.parse(process.argv);

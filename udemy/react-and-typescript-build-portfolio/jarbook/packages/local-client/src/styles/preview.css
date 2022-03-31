@@ -31,3 +31,7 @@
 .preview-error::before {
   content: 'BUNDLING ERROR!: ';
 }
+
+iframe {
+  pointer-events: none;
+}
