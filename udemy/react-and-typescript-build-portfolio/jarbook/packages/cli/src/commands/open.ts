@@ -1,6 +1,6 @@
 import path from 'path';
 import { Command } from 'commander';
-import { open } from 'local-api';
+import { open } from '@jarbook/local-api';
 
 interface OptionsType {
   port: string;
@@ -11,6 +11,8 @@ interface ErrorType {
   code?: string;
 }
 
+const isProduction = process.env.NODE_ENV === 'production';
+
 export const openCommand = new Command()
   .command('open [filename]')
   .description('open a file for editing')
@@ -18,7 +20,12 @@ export const openCommand = new Command()
   .action(async (filename = 'notebook.js', options: OptionsType) => {
     try {
       const dir = path.join(process.cwd(), path.dirname(filename));
-      await open(parseInt(options.port), path.basename(filename), dir);
+      await open(
+        parseInt(options.port),
+        path.basename(filename),
+        dir,
+        !isProduction
+      );
       console.log(
         `You can now edit ${filename} in the browser on http://localhost:${options.port}`
       );

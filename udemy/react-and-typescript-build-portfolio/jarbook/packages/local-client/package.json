@@ -1,8 +1,10 @@
 {
-  "name": "local-client",
+  "name": "@jarbook/local-client",
   "version": "0.1.0",
-  "private": true,
-  "dependencies": {
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/react-fontawesome": "^0.1.18",
     "@monaco-editor/react": "3.7.5",
@@ -36,11 +38,15 @@
     "typescript": "^4.6.2",
     "web-vitals": "^2.1.4"
   },
+  "files": [
+    "build"
+  ],
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepublishOnly": "npm run build"
   },
   "eslintConfig": {
     "extends": [
