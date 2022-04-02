@@ -36,7 +36,7 @@ bower_components
 .lock-wscript
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
-build/Release
+build/
 
 # Dependency directories
 node_modules/
@@ -62,7 +62,7 @@ typings/
 
 # gatsby files
 .cache/
-public
+public/
 
 # Mac files
 .DS_Store
@@ -76,6 +76,8 @@ yarn-error.log
 
 finished-files-before-record/
 
-# build and dist folder
-build/
+# dist folder
 dist/
+
+.idea/
+.vscode/
