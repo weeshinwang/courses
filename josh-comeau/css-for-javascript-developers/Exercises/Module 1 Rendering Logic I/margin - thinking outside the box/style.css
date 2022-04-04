@@ -1,0 +1,20 @@
+body {
+  background: #222;
+  padding: 32px;
+}
+
+.card {
+  background-color: white;
+  padding: 32px;
+  border-radius: 8px;
+}
+
+h1 {
+  background: deeppink;
+  padding: 16px 32px;
+  margin-bottom: 24px;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 4px;
+  margin-top: -50px;
+}
