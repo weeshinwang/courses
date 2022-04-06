@@ -1,0 +1,17 @@
+{
+  "name": "photo-carousel",
+  "version": "1.0.0",
+  "description": "Codecademy's demo code for Building Apps with esbuild article",
+  "main": "src/app.js",
+  "scripts": {
+    "build": "esbuild ./src/app.js --bundle --loader:.js=jsx --loader:.jpg=file --loader:.svg=dataurl --outdir=./public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "esbuild": "^0.14.31",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}

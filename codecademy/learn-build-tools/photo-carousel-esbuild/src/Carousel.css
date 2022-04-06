@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.sun {
+  width: 100px;
+  margin-bottom: 18px;
+}
+
+.vacationImg {
+  display: block;
+  margin: auto;
+  max-height: 800px;
+  width: auto;
+}

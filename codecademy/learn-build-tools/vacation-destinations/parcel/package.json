@@ -1,0 +1,18 @@
+{
+  "name": "vacation-destinations",
+  "version": "1.0.0",
+  "description": "Parcel project code for Learn Build Tools course on Codecademy",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url ./"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.4.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "main": "index.js"
+}
