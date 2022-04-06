@@ -1,0 +1,148 @@
+h1 {
+  font-family: "Whitney", sans-serif;
+  font-size: 18px;
+  padding-bottom: 20px;
+  color: #434444;
+}
+
+span {
+  display: block;
+}
+
+rect {
+  width: 24px;
+  float: left;
+  padding-left: 25px;
+  padding-top: 7px;
+  white-space: nowrap;
+  word-break: break-all;
+  position: relative;
+  bottom: 0px;
+  font-size: 12px;
+  color: #707070;
+  background-color: #707070;
+  font-family: "Montserrat", sans-serif;
+}
+rect:before {
+  display: inline-block;
+  -webkit-transform: rotate(90deg);
+  transform-origin: left top 0;
+  float: left;
+}
+rect:after {
+  position: absolute;
+  top: -15px;
+  left: 0px;
+}
+
+rect:nth-child(2) {
+  height: 632.6666666667px;
+  background-color: rgba(167, 240, 213, 0.55);
+}
+rect:nth-child(2):before {
+  content: "Sugar Cane";
+}
+rect:nth-child(2):after {
+  content: "1898m";
+}
+
+rect:nth-child(3) {
+  height: 339px;
+  background-color: rgba(0, 159, 255, 0.5);
+}
+rect:nth-child(3):before {
+  content: "Corn";
+}
+rect:nth-child(3):after {
+  content: "1017m";
+}
+
+rect:nth-child(4) {
+  height: 246px;
+  background-color: rgba(10, 165, 153, 0.45);
+}
+rect:nth-child(4):before {
+  content: "Rice";
+}
+rect:nth-child(4):after {
+  content: "738m";
+}
+
+rect:nth-child(5) {
+  height: 237px;
+  background-color: rgba(167, 240, 213, 0.4);
+}
+rect:nth-child(5):before {
+  content: "Wheat";
+}
+rect:nth-child(5):after {
+  content: "711m";
+}
+
+rect:nth-child(6) {
+  height: 211.6666666667px;
+  background-color: rgba(0, 159, 255, 0.35);
+}
+rect:nth-child(6):before {
+  content: "Cow Milk";
+}
+rect:nth-child(6):after {
+  content: "635m";
+}
+
+rect:nth-child(7) {
+  height: 124.6666666667px;
+  background-color: rgba(10, 165, 153, 0.3);
+}
+rect:nth-child(7):before {
+  content: "Potatoes";
+}
+rect:nth-child(7):after {
+  content: "374m";
+}
+
+rect:nth-child(8) {
+  height: 93px;
+  background-color: rgba(167, 240, 213, 0.25);
+}
+rect:nth-child(8):before {
+  content: "Vegetables";
+}
+rect:nth-child(8):after {
+  content: "279m";
+}
+
+rect:nth-child(9) {
+  height: 92.6666666667px;
+  background-color: rgba(0, 159, 255, 0.2);
+}
+rect:nth-child(9):before {
+  content: "Soy Beans";
+}
+rect:nth-child(9):after {
+  content: "278m";
+}
+
+rect:nth-child(10) {
+  height: 87.6666666667px;
+  background-color: rgba(10, 165, 153, 0.15);
+}
+rect:nth-child(10):before {
+  content: "Cassava";
+}
+rect:nth-child(10):after {
+  content: "263m";
+}
+
+rect:nth-child(11) {
+  height: 82.3333333333px;
+  background-color: rgba(167, 240, 213, 0.1);
+}
+rect:nth-child(11):before {
+  content: "Sugar Beets";
+}
+rect:nth-child(11):after {
+  content: "247m";
+}
+
+/*# sourceMappingURL=style.css.map */

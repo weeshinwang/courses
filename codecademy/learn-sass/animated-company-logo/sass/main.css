@@ -1,0 +1,64 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+/* Chrome, Safari, Opera */
+@-webkit-keyframes slide-left {
+  from {
+    left: 20%;
+  }
+  to {
+    left: 50%;
+  }
+}
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.slide-left {
+  animation: slide-left 5s;
+  -webkit-animation: slide-left 5s;
+}
+
+body {
+  padding-top: 5%;
+  background-color: #f1f2f3;
+}
+
+.slide-left {
+  position: relative;
+  left: 50%;
+}
+
+h3 {
+  color: #204056;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.183em;
+  line-height: 1.4;
+  position: relative;
+  padding-top: 2%;
+  left: -6.3%;
+}
+
+circle {
+  opacity: 1;
+}
+
+.element {
+  position: absolute;
+  top: 15%;
+  left: 46%;
+  animation-name: appear;
+  animation-duration: 4s;
+}
+
+#sass-logo {
+  width: 100px;
+  fill: white;
+}
+
+/*# sourceMappingURL=main.css.map */

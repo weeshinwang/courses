@@ -1,0 +1,61 @@
+@mixin parallax-background($file) {
+  background: url(#{$file}.jpg) no-repeat center center fixed;
+  @include background-size(cover);
+}
+
+@mixin background-size($size: cover) {
+  background-size: $size;
+  -webkit-background-size: $size;
+  -moz-background-size: $size;
+  -o-background-size: $size;
+}
+
+$parallax-height: 100vh;
+$center-margin: 0px auto;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Whitney;
+  color: #2e3738;
+}
+
+#landscape {
+  @include parallax-background(landscape);
+}
+
+#monkeys {
+  @include parallax-background(monkeys);
+}
+
+#landscape,
+#monkeys {
+  width: 100%;
+  height: $parallax-height;
+  perspective: 1px;
+  transform: translateZ(-1px);
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  h1 {
+    text-transform: uppercase;
+    font-family: 'Whitney', sans-serif;
+    letter-spacing: 0.06em;
+    font-size: 120px;
+    color: #fff;
+    opacity: 0.7;
+    text-align: center;
+    transform: translateZ(-2px);
+  }
+}
+
+p {
+  width: 70%;
+  padding: 5%;
+  margin: $center-margin;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1.4;
+}

@@ -1,0 +1,18 @@
+/* Chrome, Safari, Opera */
+@-webkit-keyframes slide-left {
+  from {
+    left: 20%;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
