@@ -1,0 +1,32 @@
+/*
+Create a “max-width-wrapper” utility.
+• Should have a max-width of 350px
+• Should have 16px of “breathing room” on
+  smaller screens.
+• HINT: Some HTML changes might be necessary.
+  Feel free to tweak the markup.
+*/
+
+.max-width-wrapper {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px 16px;
+  border-radius: 10px;
+}
+
+body {
+  background: #222;
+  padding: 0px;
+  padding-top: 32px;
+}
+
+.card {
+  background-color: white;
+  padding: 32px;
+  border-radius: 8px;
+}
+
+p {
+  margin-bottom: 16px;
+}

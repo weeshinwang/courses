@@ -1,0 +1,25 @@
+body {
+  background: #222;
+  padding: 32px;
+}
+
+.card {
+  background-color: white;
+  padding: 32px;
+  border-radius: 8px;
+}
+
+.stretch {
+  margin-left: -32px;
+  margin-right: -32px;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+p,
+img {
+  margin-bottom: 16px;
+}

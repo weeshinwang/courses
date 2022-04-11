@@ -1,0 +1,14 @@
+/* Implementing fit-content property only using flow layout */
+
+/* h2 {
+  max-width: max-content;
+  background-color: peachpuff;
+  margin-bottom: 16px;
+  padding: 8px;
+} */
+h2 {
+  display: table;
+  background-color: peachpuff;
+  margin-bottom: 16px;
+  padding: 8px;
+}

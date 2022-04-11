@@ -1,0 +1,17 @@
+figure {
+  padding: 8px;
+  border: 1px solid;
+  margin-bottom: 32px;
+  width: min-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figure img {
+  margin-bottom: 8px;
+}
+
+figcaption {
+  text-align: center;
+  color: #666666;
+}
