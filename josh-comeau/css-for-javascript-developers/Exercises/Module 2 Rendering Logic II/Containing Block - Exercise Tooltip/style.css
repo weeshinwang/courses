@@ -1,0 +1,17 @@
+.tooltip {
+  display: none;
+  background: white;
+  border: 1px solid;
+  position: absolute;
+  width: 150px;
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+.tooltip-trigger:hover .tooltip {
+  display: block;
+}
+
+a.tooltip-trigger {
+  display: inline-block;
+}
