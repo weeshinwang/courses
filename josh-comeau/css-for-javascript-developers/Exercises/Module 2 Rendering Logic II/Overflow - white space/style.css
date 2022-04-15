@@ -1,0 +1,10 @@
+.wrapper {
+  overflow: auto;
+  border: 3px solid;
+  /* The secret ingredient: */
+  white-space: nowrap;
+}
+
+.wrapper img {
+  width: 32%;
+}

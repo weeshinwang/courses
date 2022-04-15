@@ -1,0 +1,56 @@
+body {
+  height: 200vh;
+}
+
+.fixed {
+  position: fixed;
+  top: 25%;
+  right: 10%;
+  width: 100px;
+  height: 100px;
+  background: slateblue;
+  opacity: 0.8;
+}
+
+.slot {
+  position: fixed;
+  top: 25%;
+  right: 10%;
+  width: 100px;
+  height: 100px;
+  border: 6px solid slateblue;
+  opacity: 0.8;
+}
+
+body {
+  height: 200vh;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/**
+ * Ignore this bit!
+ *
+ * Imagine that this was a much-more complex
+ * app, and you weren't able to just look through
+ * all the CSS real quick!
+ *
+ * Use the JS snippet to find the culprit!
+ *
+ */
+
+section {
+  will-change: transform;
+}
+
+main {
+  will-change: opacity;
+}
+
+aside {
+  backface-visibility: hidden;
+  transform: none;
+}
