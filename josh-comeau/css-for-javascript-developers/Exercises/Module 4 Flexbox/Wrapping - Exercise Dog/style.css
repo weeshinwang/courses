@@ -1,0 +1,22 @@
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+article {
+  flex: 1 1 150px;
+  max-width: 250px;
+  margin: 10px;
+  background-color: rgb(245, 245, 245);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+article img {
+  width: 100%;
+}
+
+section * {
+  padding: 10px;
+}

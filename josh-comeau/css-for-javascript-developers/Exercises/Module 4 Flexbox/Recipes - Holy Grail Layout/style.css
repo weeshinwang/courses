@@ -1,0 +1,40 @@
+header {
+  background-color: aliceblue;
+}
+nav {
+  background-color: aquamarine;
+}
+main {
+  background-color: bisque;
+}
+aside {
+  background-color: brown;
+}
+footer {
+  background-color: fuchsia;
+}
+
+.box {
+  min-height: 50px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+}
+
+.middle {
+  flex: 1;
+  display: flex;
+}
+
+nav,
+aside {
+  flex: 1;
+}
+
+main {
+  flex: 3;
+}

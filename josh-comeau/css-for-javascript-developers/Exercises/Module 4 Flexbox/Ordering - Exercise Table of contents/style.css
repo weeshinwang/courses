@@ -1,0 +1,37 @@
+aside * {
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+}
+
+aside {
+  background-color: rgb(232, 232, 232);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+main {
+  flex: 1;
+}
+
+aside {
+  min-width: 200px;
+  height: fit-content;
+  display: flex;
+}
+
+aside nav {
+  display: flex;
+  flex-direction: column;
+}
+
+aside nav h2 {
+  margin-bottom: auto;
+}
+
+aside nav ul li:not(:first-of-type) {
+  margin-top: 10px;
+}

@@ -1,0 +1,30 @@
+.photo-viewer {
+  display: flex;
+  gap: 16px;
+}
+
+.photo-roll {
+  flex: 0 0 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.actions {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.photo-roll img {
+  width: 100%;
+}
+
+.main-photo {
+  flex: 1;
+  line-height: 0px;
+}
+
+.main-photo img {
+  width: 100%;
+}

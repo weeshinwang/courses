@@ -1,0 +1,33 @@
+html,
+body {
+  height: 100%;
+}
+
+ol li {
+  list-style-type: none;
+}
+
+.message {
+  border-radius: 8px;
+  width: fit-content;
+  margin: 8px 50px;
+  padding: 10px;
+}
+
+.sent {
+  background-color: lightskyblue;
+}
+
+.received {
+  background-color: lightpink;
+  align-self: flex-end;
+}
+
+ol {
+  width: 500px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}

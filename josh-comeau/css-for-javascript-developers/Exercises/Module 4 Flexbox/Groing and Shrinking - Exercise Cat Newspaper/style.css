@@ -1,0 +1,14 @@
+article img {
+  width: 100%;
+}
+
+main {
+  display: flex;
+}
+
+article {
+  flex: 1;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid gainsboro;
+}

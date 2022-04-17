@@ -1,0 +1,24 @@
+article:nth-child(1) {
+  background-color: orange;
+}
+
+article:nth-child(2) {
+  background-color: lightskyblue;
+}
+article:nth-child(3) {
+  background-color: lightgoldenrodyellow;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+article {
+  flex: 0 1 200px;
+  height: 300px;
+  border-radius: 10px;
+  margin: 10px;
+  border: 2px solid;
+}

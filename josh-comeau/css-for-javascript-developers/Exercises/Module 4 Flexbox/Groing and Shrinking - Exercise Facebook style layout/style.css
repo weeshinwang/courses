@@ -1,0 +1,38 @@
+.wrapper * {
+  height: 200px;
+  border: 2px solid;
+}
+
+nav {
+  background-color: lightpink;
+}
+main {
+  background-color: lightblue;
+}
+aside {
+  background-color: bisque;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav,
+aside.contacts {
+  min-width: 150px;
+  max-width: 250px;
+  flex-shrink: 9999999;
+  flex-basis: 250px;
+}
+
+main {
+  flex: 1;
+  flex-basis: 500px;
+}
+
+@media (max-width: 700px) {
+  nav {
+    display: none;
+  }
+}

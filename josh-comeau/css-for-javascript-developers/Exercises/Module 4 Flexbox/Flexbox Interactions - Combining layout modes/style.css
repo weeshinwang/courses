@@ -1,0 +1,20 @@
+section {
+  display: flex;
+  gap: 32px;
+  border: 3px solid hotpink;
+  overflow: auto;
+}
+
+.col {
+  flex: 1;
+  padding: 16px;
+}
+
+.col:first-of-type {
+  position: sticky;
+  top: 0;
+}
+
+.col:last-of-type {
+  height: 0px;
+}

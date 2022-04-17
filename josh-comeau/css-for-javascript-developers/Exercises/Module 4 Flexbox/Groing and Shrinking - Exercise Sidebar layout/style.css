@@ -1,0 +1,20 @@
+.wrapper * {
+  height: 100px;
+  border: 2px solid;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+nav {
+  flex-grow: 1;
+  background-color: lightpink;
+  max-width: 150px;
+}
+
+main {
+  flex-grow: 2;
+  background-color: lightblue;
+  max-width: 500px;
+}
