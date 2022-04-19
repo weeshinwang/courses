@@ -1,0 +1,104 @@
+:root {
+  --gray: 170deg;
+  --color-gray-100: hsl(var(--gray) 20% 95%);
+  --color-gray-300: hsl(var(--gray) 10% 75%);
+  --color-gray-500: hsl(var(--gray) 5% 50%);
+  --color-gray-700: hsl(var(--gray) 10% 30%);
+  --color-gray-900: hsl(var(--gray) 15% 15%);
+
+  --primay: 245deg 90%;
+
+  --color-primary: hsl(var(--primay) 50%);
+  --color-primary-light: hsl(var(--primay) 70%);
+  --color-primary-dark: hsl(var(--primay) 30%);
+  --color-primary-alpha-300: hsl(var(--primay) 50% / 0.3);
+  --color-primary-alpha-500: hsl(var(--primay) 50% / 0.5);
+  --color-primary-alpha-700: hsl(var(--primay) 50% / 0.7);
+
+  --secondary: 350deg 95%;
+  --color-secondary: hsl(var(--secondary) 50%);
+  --color-secondary-light: hsl(var(--secondary) 70%);
+  --color-secondary-dark: hsl(var(--secondary) 30%);
+  --color-secondary-alpha-300: hsl(var(--secondary) 50% / 0.3);
+  --color-secondary-alpha-500: hsl(var(--secondary) 50% / 0.5);
+  --color-secondary-alpha-700: hsl(var(--secondary) 50% / 0.7);
+}
+
+main {
+  border: solid black;
+  padding: 8px;
+}
+.row {
+  display: flex;
+  padding: 8px 0px;
+  gap: 8px;
+}
+.row.with-bg {
+  padding: 8px;
+  background-image: url('/course-materials/nasa-earth-shot.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+.demo-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+}
+
+/*
+  The code below is very repetitive, but you don't
+  have to worry about it. In a modern JS app, we'd
+  probably generate these classes automatically!
+*/
+.bg-gray-100 {
+  background: var(--color-gray-100);
+}
+.bg-gray-300 {
+  background: var(--color-gray-300);
+}
+.bg-gray-500 {
+  background: var(--color-gray-500);
+}
+.bg-gray-700 {
+  background: var(--color-gray-700);
+}
+.bg-gray-900 {
+  background: var(--color-gray-900);
+}
+.bg-primary {
+  background: var(--color-primary);
+}
+.bg-primary-light {
+  background: var(--color-primary-light);
+}
+.bg-primary-dark {
+  background: var(--color-primary-dark);
+}
+.bg-primary-alpha-700 {
+  background: var(--color-primary-alpha-700);
+}
+.bg-primary-alpha-500 {
+  background: var(--color-primary-alpha-500);
+}
+.bg-primary-alpha-300 {
+  background: var(--color-primary-alpha-300);
+}
+.bg-secondary {
+  background: var(--color-secondary);
+}
+.bg-secondary-light {
+  background: var(--color-secondary-light);
+}
+.bg-secondary-dark {
+  background: var(--color-secondary-dark);
+}
+.bg-secondary-alpha-700 {
+  background: var(--color-secondary-alpha-700);
+}
+.bg-secondary-alpha-500 {
+  background: var(--color-secondary-alpha-500);
+}
+.bg-secondary-alpha-300 {
+  background: var(--color-secondary-alpha-300);
+}

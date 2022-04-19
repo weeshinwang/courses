@@ -1,0 +1,25 @@
+main {
+  --spacing: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing);
+  padding: var(--spacing);
+}
+article {
+  border-radius: var(--spacing);
+  padding: var(--spacing);
+  border: 1px solid;
+}
+
+@media (min-width: 350px) {
+  main {
+    --spacing: 16px;
+  }
+}
+
+@media (min-width: 500px) {
+  main {
+    --spacing: 32px;
+  }
+}

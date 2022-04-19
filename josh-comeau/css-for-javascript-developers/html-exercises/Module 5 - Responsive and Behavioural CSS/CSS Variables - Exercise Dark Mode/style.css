@@ -1,0 +1,23 @@
+html {
+  --color-background: hsl(250deg 10% 90%);
+  --color-text: hsl(250deg 20% 20%);
+  --color-primary: hsl(250deg 100% 50%);
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+@media (prefer-color-scheme: dark) {
+  html {
+    --color-background: hsl(250deg 10% 10%);
+    --color-text: hsl(250deg 20% 80%);
+    --color-primary: hsl(250deg 100% 80%);
+  }
+}

@@ -1,0 +1,32 @@
+/* .column {
+  background: white;
+  border-radius: 4px;
+  padding: 24px;
+  margin: 0 auto;
+}
+
+@media (min-width: 550px) {
+  .column {
+    width: 65%;
+    min-width: 500px;
+    max-width: 800px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+} */
+
+.column {
+  width: clamp(500px, 65%, 800px);
+  max-width: 100%;
+
+  background: white;
+  border-radius: 4px;
+  padding: 24px;
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+}

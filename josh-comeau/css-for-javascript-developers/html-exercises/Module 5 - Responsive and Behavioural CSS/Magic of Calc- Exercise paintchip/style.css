@@ -1,0 +1,69 @@
+.box {
+  --angle: calc(-45deg + var(--index) * 15deg);
+  --base-hue: calc(var(--index) * 4deg + 180deg);
+  --lightness: calc(70% - 5% * var(--index));
+  --start-color: calc(var(--base-hue) + 5deg * var(--index));
+  --end-color: calc(var(--base-hue));
+
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(
+    var(--angle),
+    hsl(var(--start-color) 100% 50%),
+    hsl(var(--end-color) 100% var(--lightness))
+  );
+}
+
+.row {
+  display: flex;
+  width: 600px;
+}
+
+.box:nth-of-type(1) {
+  --index: 1;
+}
+.box:nth-of-type(2) {
+  --index: 2;
+}
+.box:nth-of-type(3) {
+  --index: 3;
+}
+.box:nth-of-type(4) {
+  --index: 4;
+}
+.box:nth-of-type(5) {
+  --index: 5;
+}
+.box:nth-of-type(6) {
+  --index: 6;
+}
+.box:nth-of-type(7) {
+  --index: 7;
+}
+.box:nth-of-type(8) {
+  --index: 8;
+}
+.box:nth-of-type(9) {
+  --index: 9;
+}
+.box:nth-of-type(10) {
+  --index: 10;
+}
+.box:nth-of-type(11) {
+  --index: 11;
+}
+.box:nth-of-type(12) {
+  --index: 12;
+}
+.box:nth-of-type(13) {
+  --index: 13;
+}
+.box:nth-of-type(14) {
+  --index: 14;
+}
+.box:nth-of-type(15) {
+  --index: 15;
+}
+.box:nth-of-type(16) {
+  --index: 16;
+}

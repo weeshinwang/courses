@@ -1,0 +1,53 @@
+:root {
+  --hue: 0deg;
+  --range: 20deg;
+}
+
+.box {
+  --angle: 45deg;
+  --start-color: calc(var(--hue) - var(--range));
+  --end-color: calc(var(--hue) + var(--range));
+  --radius: 4px;
+  --rotate: 5deg;
+
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(
+    var(--angle),
+    hsl(var(--start-color) 100% 50%),
+    hsl(var(--end-color) 100% 50%)
+  );
+  border-radius: var(--radius);
+  transform: rotate(var(--rotate));
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+}
+
+.box:nth-of-type(2n) {
+  --hue: 30deg;
+}
+.box:nth-of-type(3n) {
+  --hue: -30deg;
+  --rotate: 120deg;
+}
+.box:nth-of-type(9n - 3) {
+  --hue: -90deg;
+  --rotate: 50deg;
+}
+.box:nth-of-type(3n + 1) {
+  --angle: -60deg;
+  --rotate: 150deg;
+}
+.box:nth-of-type(2n + 1) {
+  --range: 50deg;
+}
+.box:nth-of-type(7n - 6) {
+  --range: 120deg;
+}
+.box:nth-of-type(14) {
+  --radius: 50%;
+}

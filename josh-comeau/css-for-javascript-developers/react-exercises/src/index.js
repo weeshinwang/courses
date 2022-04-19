@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import HeaderApp from './module-4/gap';
+import ModalApp from './module-5/mobile-modal/ModalApp';
 
 const rootElement = document.getElementById('root');
 ReactDOM.render(
   <React.StrictMode>
-    <HeaderApp />
+    <ModalApp />
   </React.StrictMode>,
   rootElement
 );

@@ -1,0 +1,86 @@
+.box {
+  --angle: calc(45deg + var(--index) * 45deg);
+  --force: 0;
+  --start-hue: calc((16 - var(--index)) * 5deg + 290deg);
+  --start-sat: 100%;
+  --start-lit: calc(50% - var(--index) * 1%);
+  --end-hue: calc(var(--start-hue) + var(--index) * -8deg + 50deg);
+  --end-sat: 90%;
+  --end-lit: calc(50% - var(--index) * 2%);
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(
+    var(--angle),
+    hsl(var(--start-hue) var(--start-sat) var(--start-lit)),
+    hsl(var(--end-hue) var(--end-sat) var(--end-lit))
+  );
+  /*
+    I have NO IDEA why a transparent border has this effect.
+    But I'm into it!
+  */
+  border-bottom: 82px solid transparent;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2px;
+  gap: 2px;
+  width: 406px;
+  height: 406px;
+  border: 2px solid black;
+  box-sizing: content-box;
+}
+
+.box:nth-of-type(1) {
+  --index: 1;
+}
+.box:nth-of-type(2) {
+  --index: 2;
+}
+.box:nth-of-type(3) {
+  --index: 3;
+}
+.box:nth-of-type(4) {
+  --index: 4;
+}
+.box:nth-of-type(5) {
+  --index: 5;
+}
+.box:nth-of-type(6) {
+  --index: 6;
+}
+.box:nth-of-type(7) {
+  --index: 7;
+}
+.box:nth-of-type(8) {
+  --index: 8;
+}
+.box:nth-of-type(9) {
+  --index: 9;
+}
+.box:nth-of-type(10) {
+  --index: 10;
+}
+.box:nth-of-type(11) {
+  --index: 11;
+}
+.box:nth-of-type(12) {
+  --index: 12;
+}
+.box:nth-of-type(13) {
+  --index: 13;
+}
+.box:nth-of-type(14) {
+  --index: 14;
+}
+.box:nth-of-type(15) {
+  --index: 15;
+}
+.box:nth-of-type(16) {
+  --index: 16;
+}
+
+* {
+  box-sizing: border-box;
+}
