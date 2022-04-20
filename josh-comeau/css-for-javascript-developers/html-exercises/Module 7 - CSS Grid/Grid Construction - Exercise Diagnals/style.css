@@ -1,0 +1,26 @@
+.wrapper {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  min-height: 100%;
+}
+
+.box {
+  width: 50%;
+}
+
+.box.one {
+  background-color: pink;
+  justify-self: end;
+}
+.box.two {
+  background-color: lavender;
+  justify-self: center;
+}
+.box.three {
+  background-color: peachpuff;
+}
+
+html,
+body {
+  height: 100%;
+}

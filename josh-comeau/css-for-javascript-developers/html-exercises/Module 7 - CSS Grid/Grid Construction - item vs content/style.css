@@ -1,0 +1,11 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 250px 250px;
+  justify-content: center;
+  align-items: start;
+  gap: 16px;
+}
+
+.card {
+  background-color: beige;
+}

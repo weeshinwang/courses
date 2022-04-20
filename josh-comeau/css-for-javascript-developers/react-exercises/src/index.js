@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ModalApp from './module-5/mobile-modal/ModalApp';
+import CalendarApp from './module-6/calendar';
 
 const rootElement = document.getElementById('root');
 ReactDOM.render(
   <React.StrictMode>
-    <ModalApp />
+    <CalendarApp />
   </React.StrictMode>,
   rootElement
 );

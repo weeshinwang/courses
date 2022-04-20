@@ -1,0 +1,17 @@
+/* 320px minimum width
+16px gap
+No overflow */
+
+.grid * {
+  border: 1px solid;
+  height: 50px;
+}
+
+.grid {
+  --min-col-width: min(200px, 100%);
+  display: grid;
+  padding: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(var(--min-col-width), 1fr));
+  gap: 16px;
+  padding: 16px;
+}

@@ -1,0 +1,48 @@
+.wrapper {
+  --rect-width: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  min-height: 100%;
+  justify-items: end;
+  align-content: center;
+  gap: 5px;
+}
+
+.box {
+  width: var(--rect-width);
+  height: 80px;
+}
+
+.box.one {
+  background-color: pink;
+  width: calc(0.25 * var(--rect-width));
+}
+.box.two {
+  background-color: pink;
+  width: calc(0.75 * var(--rect-width));
+}
+.box.three {
+  background-color: lavender;
+  width: calc(0.5 * var(--rect-width));
+}
+.box.four {
+  background-color: lavender;
+  width: calc(0.5 * var(--rect-width));
+}
+.box.five {
+  background-color: honeydew;
+  width: calc(0.75 * var(--rect-width));
+}
+.box.six {
+  background-color: honeydew;
+  width: calc(0.25 * var(--rect-width));
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.box:nth-of-type(even) {
+  justify-self: start;
+}

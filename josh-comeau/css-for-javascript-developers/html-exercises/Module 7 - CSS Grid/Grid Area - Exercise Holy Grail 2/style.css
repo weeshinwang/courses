@@ -1,0 +1,53 @@
+/*
+Implement Holy Grail Layout which includes header, left sidebar, body, right sidebar and footer.
+
+    it should be sticky footer
+    left sidebar and right sidebar should be fixed width of 100px.
+    styles of color .etc are already set for you, only layout related CSS code is needed.
+
+*/
+
+/** your code here **/
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+  grid-template-rows: max-content;
+  grid-template-areas:
+    'header header header'
+    'left main right'
+    'footer footer footer';
+  height: 100%;
+  align-items: start;
+}
+
+.header {
+  background-color: lightblue;
+  grid-area: header;
+}
+
+.body {
+  grid-area: main;
+}
+
+.left-sidebar {
+  grid-area: left;
+  background-color: antiquewhite;
+}
+
+.right-sidebar {
+  grid-area: right;
+  background-color: antiquewhite;
+}
+
+.footer {
+  position: sticky;
+  grid-area: footer;
+  bottom: 0;
+  background-color: lightblue;
+  align-self: stretch;
+}

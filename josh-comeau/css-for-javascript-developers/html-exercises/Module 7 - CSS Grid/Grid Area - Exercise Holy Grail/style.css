@@ -1,0 +1,40 @@
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 200px 1fr 150px;
+  grid-template-rows: 4rem 1fr 5rem;
+  grid-template-areas:
+    'header header header'
+    'nav main aside'
+    'footer footer footer';
+  min-height: 100%;
+  border: 1px solid;
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+}
+
+aside {
+  grid-area: aside;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.wrapper * {
+  border: 1px solid;
+}

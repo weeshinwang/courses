@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.grid {
+  --header-height: 5rem;
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'sidebar main'
+    'footer footer';
+  grid-template-columns: 14rem 1fr;
+  gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+  isolation: isolate;
+}
+
+header {
+  grid-area: header;
+  border-bottom: 3px solid;
+  /* Center the contents */
+  display: grid;
+  place-content: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  height: var(--header-height);
+  z-index: 2;
+}
+
+aside {
+  position: relative;
+  grid-area: sidebar;
+  border: 2px solid lightcoral;
+  z-index: 1;
+}
+
+.stick-sidebar {
+  position: sticky;
+  top: var(--header-height);
+}
+
+main {
+  grid-area: main;
+  /*
+    Add a bunch of height, to simulate it
+    being full of content
+  */
+  min-height: 180vh;
+  border: 3px solid;
+}
+
+footer {
+  grid-area: footer;
+  height: 5rem;
+  border-top: 3px solid;
+  display: grid;
+  place-content: center;
+  background-color: white;
+  z-index: 2;
+}
+
+.grid > * {
+  padding: 8px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}

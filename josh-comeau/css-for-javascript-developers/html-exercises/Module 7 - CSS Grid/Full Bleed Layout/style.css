@@ -1,0 +1,24 @@
+.wrapper {
+  --breathing-room: 16px;
+  display: grid;
+  grid-template-columns:
+    1fr
+    min(30ch, calc(100% - var(--breathing-room) * 2))
+    1fr;
+  gap: 0px var(--breathing-room);
+}
+
+.wrapper > * {
+  grid-column: 2;
+}
+
+.full-bleed {
+  grid-column: 1 / -1;
+}
+
+.meerkat {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
