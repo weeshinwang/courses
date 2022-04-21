@@ -1,0 +1,51 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  display: grid;
+  place-content: center;
+  height: 100%;
+}
+
+.wave {
+  display: inline-block;
+  font-size: 5rem;
+  animation: waving-hands 1750ms ease-in-out both infinite;
+  transform-origin: 75% 85%;
+}
+
+@keyframes waving-hands {
+  /* from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(30deg);
+  } */
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(14deg);
+  }
+  30% {
+    transform: rotate(-8deg);
+  }
+  40% {
+    transform: rotate(14deg);
+  }
+  50% {
+    transform: rotate(-4deg);
+  }
+  60% {
+    transform: rotate(10deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

@@ -1,0 +1,30 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 8px;
+  padding: 16px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  background: white;
+  border-radius: 8px;
+  border: 2px solid hsl(240deg 100% 75%);
+}
+
+.card img {
+  width: 64px;
+  height: 64px;
+}
+
+.card {
+  transition: transform 250ms;
+}
+
+.card-link:hover .card {
+  transform: translateY(-16px);
+}

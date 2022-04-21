@@ -1,0 +1,34 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.dialog-wrapper {
+  display: grid;
+  place-content: center;
+  width: 100%;
+  height: 100%;
+  background: hsl(0deg 0% 0% / 0.75);
+}
+
+.dialog-content {
+  width: 600px;
+  max-width: 100%;
+  height: 400px;
+  background: white;
+  border-radius: 6px;
+  position: relative;
+}
+
+.close-btn {
+  padding: 16px;
+  background: transparent;
+  border: none;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-100%);
+  color: white;
+}

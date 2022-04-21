@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import CalendarApp from './module-6/calendar';
+import ModalApp from './module-8/orchestrated-modal';
 
 const rootElement = document.getElementById('root');
 ReactDOM.render(
   <React.StrictMode>
-    <CalendarApp />
+    <ModalApp />
   </React.StrictMode>,
   rootElement
 );

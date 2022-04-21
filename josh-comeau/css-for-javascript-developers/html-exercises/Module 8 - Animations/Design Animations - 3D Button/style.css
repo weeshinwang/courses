@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.pushable {
+  background: hsl(340deg 100% 32%);
+  border: none;
+  border-radius: 12px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.wrapper {
+  display: grid;
+  place-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.front {
+  display: block;
+  padding: 12px 42px;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  background: hsl(345deg 100% 47%);
+  color: white;
+}
+
+.front {
+  transform: translateY(-4px);
+  transition: transform 500ms;
+}
+
+.pushable:hover .front {
+  transform: translateY(-6px);
+  transition: transform 250ms;
+}
+
+.pushable:active .front {
+  transform: translateY(-2px);
+  transition: transform 50ms;
+}
