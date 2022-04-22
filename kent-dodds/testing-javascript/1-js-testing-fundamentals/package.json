@@ -1,0 +1,15 @@
+{
+  "name": "js-testing-fundamentals",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">   JavaScript Testing Fundamentals </h1>",
+  "main": "math.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
