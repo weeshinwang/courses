@@ -1,9 +1,9 @@
 import React from 'react';
 import 'antd/dist/antd.css';
-import PickerApp from './components/datepicker';
+import ProgressApp from './components/progress';
 
 function App() {
-  return <PickerApp />;
+  return <ProgressApp />;
 }
 
 export default App;
