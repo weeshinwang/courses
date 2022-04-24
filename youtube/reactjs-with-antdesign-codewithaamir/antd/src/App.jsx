@@ -1,9 +1,9 @@
 import React from 'react';
 import 'antd/dist/antd.css';
-import ProgressApp from './components/progress';
+import EditTable from './advanced-components/edit-table';
 
 function App() {
-  return <ProgressApp />;
+  return <EditTable />;
 }
 
 export default App;

@@ -34,5 +34,3 @@ function getLength(input: string | number): number {
     return input.toString().length;
   }
 }
-
-declare var jQuery: (selector: string) => any;
