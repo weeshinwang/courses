@@ -1,0 +1,6 @@
+@use 'variables';
+@use 'reset';
+
+:root {
+  font-family: variables.$font-family;
+}

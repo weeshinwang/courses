@@ -1,9 +1,9 @@
 import React from 'react';
 import 'antd/dist/antd.css';
-import EditTable from './advanced-components/edit-table';
+import Clock from './advanced-components/clock';
 
 function App() {
-  return <EditTable />;
+  return <Clock />;
 }
 
 export default App;
