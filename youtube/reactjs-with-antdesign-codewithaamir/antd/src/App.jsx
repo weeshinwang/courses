@@ -1,9 +1,9 @@
 import React from 'react';
 import 'antd/dist/antd.css';
-import Clock from './advanced-components/clock';
+import PaginatedTable from './advanced-components/paginated-table';
 
 function App() {
-  return <Clock />;
+  return <PaginatedTable />;
 }
 
 export default App;
