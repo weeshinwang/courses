@@ -258,3 +258,8 @@ $font-weight-light: 400 !default;
 $font-weight-medium: 500 !default;
 $font-weight-bold: 600 !default;
 $font-size-base: 16px;
+
+$link-color: $color-primary;
+$link-decoration: none !default;
+$link-hover-color: darken($link-color, 15%) !default;
+$link-hover-decoration: initial !default;
