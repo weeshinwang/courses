@@ -1,3 +1,5 @@
+import React, { ReactNode } from 'react';
+
 export enum ButtonSize {
   large = 'large',
   small = 'small',
@@ -10,9 +12,16 @@ export enum ButtonType {
   alert = 'alert',
   error = 'error',
 }
-const a = '123';
-if (a == '123') {
-  console.log(123);
+
+interface ButtonProps {
+  className?: string;
+  disabled?: boolean;
+  size?: ButtonSize;
+  btnType: ButtonType;
+  children: ReactNode;
 }
 
-let b;
+function Button(props: ButtonProps): JSX.Element {
+  const { btnType, disabled, size, children } = props;
+  return <div>HELLO</div>;
+}

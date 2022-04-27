@@ -37,6 +37,8 @@
   "plugins": ["@typescript-eslint"],
   "rules": {
     "no-console": "off",
+    "react/require-default-props": "off",
+    "react/no-unused-prop-types": "warn",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/jsx-filename-extension": [
