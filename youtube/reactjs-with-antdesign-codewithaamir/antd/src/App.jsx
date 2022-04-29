@@ -1,9 +1,9 @@
 import React from 'react';
 import 'antd/dist/antd.css';
-import PaginatedTable from './advanced-components/paginated-table';
+import SearchTable from './advanced-components/search-table';
 
 function App() {
-  return <PaginatedTable />;
+  return <SearchTable />;
 }
 
 export default App;
