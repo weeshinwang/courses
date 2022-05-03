@@ -1,0 +1,30 @@
+{
+  "private": true,
+  "name": "site",
+  "version": "1.0.0",
+  "description": "Frontend Masters Intro to Gatsby",
+  "author": "Jason Lengstorf",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^3.14.6",
+    "gatsby-plugin-image": "^2.13.0",
+    "gatsby-plugin-sharp": "^4.13.0",
+    "gatsby-source-filesystem": "^4.13.0",
+    "gatsby-theme-shared-nav": "*",
+    "gatsby-transformer-sharp": "^4.13.0",
+    "https-proxy-agent": "^5.0.1",
+    "node-fetch": "2.6.7",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "slugify": "^1.6.5"
+  }
+}
