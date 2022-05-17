@@ -21,8 +21,12 @@
     ],
     "rules": {
       "react/prop-types": 0,
-      "indent": ["error", 4],
-      "prettier/prettier": 0
+      "indent": [
+        "error",
+        4
+      ],
+      "prettier/prettier": 0,
+      "react/jsx-props-no-spreading": 0
     }
   },
   "dependencies": {

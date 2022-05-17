@@ -1,9 +1,8 @@
-import { graphql } from 'gatsby'
 import { useState, useEffect } from 'react'
 
 const gql = String.raw
 
-const queryFragment =` 
+const queryFragment =`
 name
 _id
 image {
@@ -14,12 +13,14 @@ image {
         }
     }
 }
-    
 `
 
 export default function useLatestData() {
     const [hotSlices, setHotSlices] = useState()
     const [slicemasters, setSlicemasters] = useState()
+
+    console.log('yah', process.env.GATSBY_GRAPHQL_ENDPOINT)
+
 
     useEffect(function () {
         // when component loads, fetch the data

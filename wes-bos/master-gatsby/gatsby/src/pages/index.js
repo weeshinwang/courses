@@ -11,7 +11,7 @@ import ItemGrid from '../components/ItemGrid';
 //         {children}
 //     </p>
 // );
-  
+
 const StyledP = styled.p`
     margin-bottom: 5rem;
     text-align: center;
@@ -33,11 +33,11 @@ function CurrentSlicing({slicemasters}) {
             {!slicemasters && <LoadingGrid count={4}/>}
             {slicemasters && !slicemasters?.length && (<p>暂时未有大师在场</p>)}
 
-            {slicemasters?.length && 
-            <ItemGrid 
+            {slicemasters?.length &&
+            <ItemGrid
                 items={slicemasters}
             />}
-            
+
         </div>
     )
 }
@@ -55,18 +55,19 @@ function HotSlices({hotSlices}) {
             {!hotSlices && <LoadingGrid count={4}/>}
             {hotSlices && !hotSlices?.length && (<p>暂时未有热销披萨</p>)}
 
-            {hotSlices?.length && 
-            <ItemGrid 
+            {hotSlices?.length &&
+            <ItemGrid
                 items={hotSlices}
             />}
-            
+
         </div>
     )
 }
 
 
 export default function HomePage() {
-    const { hotSlices, slicemasters } = useLatestData() 
+    const { hotSlices, slicemasters } = useLatestData()
+
     return (
         <>
 
@@ -75,11 +76,11 @@ export default function HomePage() {
                 <p>Open 11am to 11pm Every Single Day</p>
             </div> */}
             <HomePageGrid>
-                <CurrentSlicing 
+                <CurrentSlicing
                     slicemasters={slicemasters}
                 />
                 <HotSlices
-                    hotSlices={hotSlices} 
+                    hotSlices={hotSlices}
                 />
             </HomePageGrid>
 

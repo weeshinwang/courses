@@ -10,6 +10,7 @@ const GlobalStyles = createGlobalStyle`
     --white: #fff;
     --grey: #efefef;
   }
+
   html {
     background-image: url(${bg});
     background-size: 450px;
@@ -42,15 +43,17 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 
-  .gatsby-image-wrapper img[src*=base64\\,] {
+
+  /* .gatsby-image-wrapper img[src*=base64\\,] {
     image-rendering: -moz-crisp-edges;
     image-rendering: pixelated;
-  }
+  } */
 
   /* Scrollbar Styles */
   body::-webkit-scrollbar {
     width: 12px;
   }
+
   html {
     scrollbar-width: thin;
     scrollbar-color: var(--red) var(--white);
@@ -88,7 +91,6 @@ const GlobalStyles = createGlobalStyle`
   /* .largemargin {
     margin-bottom: 5rem;
   } */
-
-`;
+`
 
 export default GlobalStyles;

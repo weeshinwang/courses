@@ -28,7 +28,6 @@ export default function Seo(props) {
       <meta name="description" content={description} />
       <link rel="canonical" href={url} />
       {image && <meta name="image" content={image} />}
-
       <meta property="og:url" content={url} />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
