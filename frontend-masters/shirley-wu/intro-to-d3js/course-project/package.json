@@ -1,0 +1,17 @@
+{
+  "name": "course-project",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^2.9.9"
+  },
+  "dependencies": {
+    "d3": "^7.4.4",
+    "lodash": "^4.17.21"
+  }
+}
