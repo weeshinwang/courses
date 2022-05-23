@@ -1,6 +1,20 @@
+import * as d3 from 'd3';
+
+// import { width, svgHeight } from '../utils';
 const barData = [45, 67, 96, 84, 41];
 
-const svg = d3.select('#container');
+const root = document.querySelector('#app');
+
+const width = '800';
+const svgHeight = '150';
+
+let svg = /*html*/ `
+  <svg id='container' width=${width} height=${svgHeight}></svg>
+`;
+
+root.innerHTML = svg;
+
+svg = d3.select('#container');
 const select = svg.select('rect');
 const selectAll = svg.selectAll('rect');
 
@@ -15,12 +29,14 @@ const selectAll = svg.selectAll('rect');
 const rectWidth = 50;
 
 selectAll
-  .data([10, 20, 30, 40, 50])
+  .data(barData)
+  .enter()
+  .append('rect')
   .attr('x', (d, i) => i * rectWidth)
-  .attr('y', (d) => 100 - d)
+  .attr('y', (d) => svgHeight - d)
   .attr('height', (d) => d)
   .attr('width', rectWidth)
   .attr('stroke-width', 3)
-  .attr('stroke-dasharray', '5 5')
+  // .attr('stroke-dasharray', '5 5')
   .attr('stroke', 'plum')
   .attr('fill', 'pink');

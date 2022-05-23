@@ -13,7 +13,7 @@ import {
   COLORS,
 } from '../utils.js';
 
-const flower = (() => {
+export const flower = (() => {
   const colorScale = d3
     .scaleOrdinal()
     .domain(TOP_GENRES)
