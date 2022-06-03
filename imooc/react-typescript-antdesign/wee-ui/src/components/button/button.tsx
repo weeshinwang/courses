@@ -1,27 +1,53 @@
-import React, { ReactNode } from 'react';
+import React, { FC, ButtonHTMLAttributes, AnchorHTMLAttributes } from 'react';
+import classNames from 'classnames';
 
-export enum ButtonSize {
-  large = 'large',
-  small = 'small',
-}
+export type ButtonSize = 'lg' | 'sm';
+export type ButtonType = 'primary' | 'default' | 'danger' | 'link';
 
-export enum ButtonType {
-  primary = 'primay',
-  info = 'info',
-  success = 'success',
-  alert = 'alert',
-  error = 'error',
-}
-
-interface ButtonProps {
+interface BaseButtonProps {
   className?: string;
   disabled?: boolean;
   size?: ButtonSize;
-  btnType: ButtonType;
-  children: ReactNode;
+  btnType?: ButtonType;
+  href?: string;
+  children: React.ReactNode;
 }
 
-function Button(props: ButtonProps): JSX.Element {
-  const { btnType, disabled, size, children } = props;
-  return <div>HELLO</div>;
-}
+type NativeButtonProps = BaseButtonProps & ButtonHTMLAttributes<HTMLElement>;
+type AnchorButtonProps = BaseButtonProps & AnchorHTMLAttributes<HTMLElement>;
+
+export type ButtonProps = Partial<NativeButtonProps & AnchorButtonProps>;
+
+const Button: FC<ButtonProps> = (props) => {
+  const { btnType, className, disabled, size, children, href, ...restProps } =
+    props;
+
+  console.log('😄😄', btnType === 'link' && disabled);
+  console.log('😄', btnType === 'link');
+
+  // btn, btn-lg, btn-primary
+  const classes = classNames('btn', className, {
+    [`btn-${btnType}`]: btnType,
+    [`btn-${size}`]: size,
+    disabled: btnType !== 'link' && disabled,
+  });
+  if (btnType === 'link' && href) {
+    return (
+      <a className={classes} href={href} {...restProps}>
+        {children}
+      </a>
+    );
+  }
+  return (
+    <button className={classes} {...restProps}>
+      {children}
+    </button>
+  );
+};
+
+Button.defaultProps = {
+  disabled: false,
+  btnType: 'default',
+};
+
+export default Button;

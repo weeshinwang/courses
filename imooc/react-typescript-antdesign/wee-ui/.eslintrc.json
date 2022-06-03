@@ -46,6 +46,12 @@
       {
         "extensions": [".js", ".jsx", ".ts", ".tsx", ".mdx"]
       }
-    ]
+    ],
+    "react/function-component-definition": "off",
+    "react/button-has-type": "off",
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/restrict-template-expressions": "warn",
+    "react/jsx-props-no-spreading": "warn",
+    "react/default-props-match-prop-types": "off"
   }
 }

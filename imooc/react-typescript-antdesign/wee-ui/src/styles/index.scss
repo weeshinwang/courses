@@ -1,7 +1,9 @@
-@use 'variables';
-@use 'reset';
+@import 'variables';
+@import 'reset';
+@import 'mixin';
+@import '../components/Button/style';
 
 :root {
-  font-family: variables.$font-family;
-  font-size: 16px;
+  font-family: $font-family-base;
+  font-size: $btn-font-size;
 }
