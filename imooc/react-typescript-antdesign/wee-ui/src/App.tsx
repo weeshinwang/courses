@@ -1,4 +1,4 @@
-import Button, { ButtonType, ButtonSize } from './components/button/button';
+import Button from './components/Button/button';
 
 function App() {
   return (
