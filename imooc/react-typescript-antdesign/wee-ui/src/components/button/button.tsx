@@ -22,8 +22,7 @@ const Button: FC<ButtonProps> = (props) => {
   const { btnType, className, disabled, size, children, href, ...restProps } =
     props;
 
-  console.log('😄😄', btnType === 'link' && disabled);
-  console.log('😄', btnType === 'link');
+  const isDisabled = btnType !== 'link' && disabled;
 
   // btn, btn-lg, btn-primary
   const classes = classNames('btn', className, {
@@ -39,7 +38,7 @@ const Button: FC<ButtonProps> = (props) => {
     );
   }
   return (
-    <button className={classes} {...restProps}>
+    <button className={classes} disabled={isDisabled} {...restProps}>
       {children}
     </button>
   );

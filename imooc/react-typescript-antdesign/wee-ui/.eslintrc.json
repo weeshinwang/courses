@@ -21,6 +21,8 @@
     "react/jsx-props-no-spreading": "off",
     "react/default-props-match-prop-types": "off",
     "no-console": "off",
-    "object-curly-newline": "off"
+    "object-curly-newline": "off",
+    "react/react-in-jsx-scope": "off",
+    "import/no-extraneous-dependencies": "off"
   }
 }
